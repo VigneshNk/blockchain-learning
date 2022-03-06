@@ -8,42 +8,55 @@ header #title{
 .colours{
     padding-top: 10px;
     padding-left: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1;
+}
+
+.outer-container{
+    display: flex;
+    flex-direction: column;
+    resize: both;
+    overflow: auto;
 }
 
 .container{
     display: flex;
+    resize: both;
+    overflow: auto;
+    
 }
 
 .header{
-    width:900px;
-    height:100px;
+    width:100vh;
+    height:15vh;
     font-size: 28px;
     font-weight: bold;
     background-color: #fc965c;
 }
 
 .left{
-    width:100px;
-    height:350px;
+    width:15vh;
+    height:70vh;
     background-color: #dd60ee;
 }
 
 .content{
-    width:580px;
-    height:350px;
+    width:70vh;
+    height:70vh;
     font-size: 20px;
     font-weight: bold;
     background-color: #f3e522;
 }
 
 .right{
-    width:200px;
-    height:350px;
+    width:15vh;
+    height:70vh;
     background-color: #3aa4fa;
 }
 
 .footer{
-    width:900px;
-    height:50px;
+    width:100vh;
+    height:15vh;
     background-color: #957ee7;
 }
